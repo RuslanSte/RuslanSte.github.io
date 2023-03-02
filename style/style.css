@@ -1,0 +1,20 @@
+html{
+    background: rgb(116, 109, 223);
+}
+
+h1{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cat_1{
+    width: 50%;
+    height: 50%;
+    margin: 0px 25%;
+}
+
+
+
+
+
