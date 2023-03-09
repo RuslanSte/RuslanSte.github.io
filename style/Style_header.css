@@ -1,0 +1,197 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.top{
+    height: 50px;
+    background-color: rgb(242, 233, 221);
+    display: flex;
+    padding: 0px calc(100%/2 - 525px);
+}
+
+.login{
+    display: flex;
+    background-color: rgb(251, 193, 130);
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.login input{
+    outline: none;
+    border: 0px;
+    background-color: rgb(252, 218, 171);
+    color: rgb(230, 141, 25);
+    margin: 5px 0px 5px 10px;
+    width: 150px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+.login .button{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    background-color: rgb(252, 218, 171);
+    border-radius: 5px;
+}
+
+.login .but{
+    margin: 4px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../imgs/buttonExBG.png);
+    background-size: cover;
+}
+
+.vk{
+    width: 300px;
+    margin-right: 50px;
+    display: flex;
+    font-size: small;
+}
+
+.vk_img{
+    margin-top: 8px;
+    margin-right: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background-image: url(../imgs/vkontakte.png);
+}
+
+.vk a{
+    color: rgb(212, 128, 17);
+}
+.vk a:hover{
+    text-decoration: underline;
+}
+
+.search{
+    display: flex;
+    margin-top: 8px;
+}
+
+.search input{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(251, 193, 130);
+    font-family: cursive;
+    color: azure;
+    width: 300px;
+    height: 30px;
+}
+
+.search_img{
+    margin-top: 2px;
+    margin-left: -35px;
+    height: 30px;
+    width: 34px;
+    background-image: url(../imgs/Новый\ точечный\ рисунок.png);
+    background-repeat: no-repeat;
+
+}
+
+.navig{
+    color: rgb(70, 61, 61);
+    height: 350px;
+    background-image: url(../imgs/9.png);
+    background-position: center;
+    font-size: medium;
+}
+
+.nav_1{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    margin: 250px calc(100%/2 - 550px) 0px;
+    vertical-align: bottom;
+}
+
+.nav_el{
+    background-color: rgba(252, 195, 114, 0.57);
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.nav_el_1, .nav_el_2, .nav_el_3, .nav_el_4, .nav_el_5, .nav_el_6, .nav_el_7{
+    width: 100px;
+}
+
+.nav_el_8, .nav_el_9{
+    width: 200px;
+}
+
+.el_1, .el_2, .el_3, .el_4, .el_5, .el_6, .el_7, .el_8, .el_9{
+    padding-top: 20px;
+    height: 40px;
+}
+
+.nav_el:hover{
+    background-color: rgb(252, 195, 114, 0.75);
+    border-radius: 10px;
+}
+
+.van_el{
+    background-color: rgba(252, 195, 114, 0.75);
+    border-radius: 10px;
+    display: none;
+}
+
+.van_el_2{
+    width: 620px;
+    height: 260px;
+}
+
+.van_el_3{
+    width: 200px;
+    height: 250px;
+}
+
+.van_el_4{
+    width: 560px;
+    height: 200px;
+}
+
+table{
+    width: 600px;
+    padding: 10px;
+}
+
+a{
+    color: rgb(70, 61, 61);
+    text-decoration: none;
+}
+
+td{
+    text-align: start;
+    padding: 5px 0px;
+}
+
+ul{
+    list-style: none;
+    text-align: start;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+li{
+    padding: 5px 0px;
+}
+
+.el_2:hover ~ .van_el_2, .el_3:hover ~ .van_el_3, .el_4:hover ~ .van_el_4{
+    display: block;
+}
+
+.van_el:hover{
+    display: block;
+}
