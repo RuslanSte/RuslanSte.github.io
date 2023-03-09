@@ -461,8 +461,11 @@ main{
     background: linear-gradient(to bottom, #ffca75 0%,#fca51e 100%);
     border: 2px solid rgb(252, 179, 102);
     border-radius: 13px;
-    color: white;
     font-weight: bolder;
+}
+
+.anime .category button a{
+    color: white;
 }
 
 .anime .category button:hover{
