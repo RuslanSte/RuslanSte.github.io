@@ -1,0 +1,337 @@
+@import url(reset.css);
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.normal_width{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.fix{
+    position: sticky;
+    top: 0;
+    padding: 33px 0 0;
+    background-color: white;
+    z-index: 1;
+    
+}
+
+.fix img{
+    display: none;
+}
+
+.fix .lang{
+    display: none;
+}
+
+.nav_element .select{
+    color: black;
+}
+
+/* ---------------- Раздел Home ---------------------*/
+
+.home{
+    background-color: white;
+    /* width: 950px; */
+    margin: 33px auto;
+}
+
+.menu{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    color: #828282;
+}
+
+
+
+.select{
+    color: black;
+}
+
+hr{
+    height: 1px;
+    background-color: #828282;
+    margin: 30px 0 0;
+}
+
+.home .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.info .name{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.info .experience{
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.lang{
+    font-weight: 700;
+    color: #828282;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    
+}
+
+.lang span{
+    color: black;
+}
+
+.photo{
+    margin-bottom: 100px;
+}
+
+.photo_2{
+    display: none;
+}
+
+
+/* ---------------- Раздел About me ---------------------*/
+
+.about_me{
+    text-align: center;
+    background-color: #F6F6F6;
+    padding-top: 120px;
+    padding-bottom: 110px;
+}
+
+h2{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.about_me_info{
+    margin-top: 24px;
+    font-size: 18px;
+}
+
+/* ---------------- Раздел Skills ---------------------*/
+
+.skills{
+    text-align: center;
+    padding: 90px 0 110px;
+}
+
+.skills p{
+    margin-top: 70px;
+    font-size: 18px;
+}
+
+.my_programs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+}
+
+.skills .prog_name{
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    color: #828282;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.score img{
+    width: 22px;
+    margin-right: 5px;
+}
+
+.empty{
+    opacity: 0.15;
+}
+
+
+/* ---------------- Раздел Portfolio ---------------------*/
+
+.portfolio{
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 110px 0 95px;
+}
+
+.portfolio h2{
+    margin-bottom: -50px;
+}
+
+.site img{
+    margin-top: 100px;
+}
+
+.site p{
+    margin-top: 45px;
+
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+/* ---------------- Раздел Contacts ---------------------*/
+
+.contacts{
+    text-align: center;
+    padding: 115px 0 120px;
+}
+
+.contacts h2{
+    margin-bottom: 20px;
+}
+
+.con{
+    margin-bottom: 30px;
+}
+
+.contacts button{
+    margin-bottom: 85px;
+    background-color: black;
+    color: white;
+    border-radius: 21px;
+    width: 180px;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.contacts .socials{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soc{
+    font-size: 14px;
+    color: #828282;
+}
+
+
+
+@media screen and (max-width: 960px){
+
+    nav{
+        padding: 0 20px;
+    }
+
+    .home .info{
+        padding: 0 20px;
+    }
+
+    .programs img{
+        height: 60px;
+    }
+
+    .score img{
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .fix{
+        display: none;
+        height: 300vw;
+        width: 100%;
+        position: fixed;
+        padding: 66px 0 0;
+
+    }
+
+    .fix hr{
+        display: none;
+    }
+
+    .fix img{
+        display: inline;
+        position: absolute;
+        top: 66px;
+        right: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav_element{
+        margin-bottom: 68px;
+        font-size: 34px;
+    }
+
+    .fix .lang{
+        position: absolute;
+        top: 600px;
+        right: 30px;
+        font-size: 34px;
+        transform: rotate(0);
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+    }
+
+
+
+
+
+
+    .normal_width{
+        margin: 0 25px;
+    }
+
+    .home{
+        margin-top: 66px;
+    }
+
+    .home .info{
+        height: 185px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .info .lang{
+        display: none;
+    }
+
+    .photo_1{
+        display: none;
+    }
+
+    .photo_2{
+        display: inline;
+        width: 100%;
+    }
+
+    .my_programs{
+        flex-direction: column;
+    }
+
+    .programs{
+        margin-bottom: 50px;
+    }
+
+    .contacts button{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .contacts .socials{
+        max-width: 90%;
+    }
+}
